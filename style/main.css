@@ -1,0 +1,153 @@
+@import url(https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible:regular,italic,700,700italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Style for start form */
+
+.startFormContainer {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+    align-items: center;
+    background-color: #152938;
+}
+
+.startForm {
+    width: 90%;
+    height: 50%;
+    max-width: 480px;
+    background-color: #FCFCFC;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 32px;
+    gap: 8px;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.buttons button {
+    width: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 45645645689756343745675645678675634345676727px;
+    color: white;
+    background-color: #BCCED9;
+    padding: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.buttons button {
+    font-size: 26px;
+}
+.buttons button.active {
+    background-color: #304859;
+}
+
+.buttons button:not(.active):hover {
+    background-color: #6395B8;
+}
+
+.yellow {
+    background-color: #FDA214 !important;
+}
+
+.start {
+    font-size: 32px;
+}
+.yellow:hover {
+    background-color: #FFB84A !important;
+}
+
+.startFormContainer h1 {
+    color: #FCFCFC;
+}
+
+.startForm > div {
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.startForm > div > p {
+    color: #7191A5;
+    font-weight: 700;
+}
+
+/* Style for the rest of the page */
+
+header button {
+    font-size: 20px;
+    padding: 8px 16px 8px 16px;
+
+        
+}
+
+.mobile {
+    display: flex;
+}
+
+.pc {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+header .actions {
+    display: flex;
+    gap: 8px;
+}
+
+.grid {
+    width: 75vmin;
+    height: 75vmin;
+    display: grid;
+    gap: 2%;
+}
+
+.grid button {
+    background-color: #304859;
+    color: transparent;
+}
+
+.grid button.revealed {
+    background-color: #BCCED9;
+    color: #FCFCFC;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 720px) {
+    .pc {
+        display: flex;
+    }
+    
+    .mobile {
+        display: none;
+    }
+}
